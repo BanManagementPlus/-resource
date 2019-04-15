@@ -1,1 +1,9 @@
-
+language: python
+python:
+- 3.7
+branches:
+  only:
+    - ci
+script:
+- wget https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js
+- wget https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js
