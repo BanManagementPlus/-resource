@@ -16,3 +16,9 @@ script:
 - wget https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js
 - cd ..
 - cd ..
+- git remote add origin https://github.com/CodeAthena/CodeAthena.github.io.git
+- git add .
+- git commit -m "Travis CI Auto Builder"
+- git push --force --quiet "https://${GH_Token}@github.com/BanManagementPlus/banmanagementplus.github.io.git" ci:master
+
+
