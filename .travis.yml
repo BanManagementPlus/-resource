@@ -8,6 +8,7 @@ before_script:
 - git config --global user.name "Mryan2005" #设置github用户名 
 - git config --global user.email " 40586009+Mryan2005@users.noreply.github.com" #设置github用户邮箱 
 script:
+- rm -rf ./.git
 - mkdir outside
 - cd outside/
 - mkdir js
@@ -20,5 +21,3 @@ script:
 - git add .
 - git commit -m "Travis CI Auto Builder"
 - git push --force --quiet "https://${GH_Token}@github.com/BanManagementPlus/banmanagementplus.github.io.git" ci:master
-
-
