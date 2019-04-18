@@ -4,6 +4,9 @@ python:
 branches:
   only:
     - ci
+before_script:
+- git config --global user.name "Mryan2005" #设置github用户名 
+- git config --global user.email " 40586009+Mryan2005@users.noreply.github.com" #设置github用户邮箱 
 script:
 - mkdir outside
 - cd outside/
